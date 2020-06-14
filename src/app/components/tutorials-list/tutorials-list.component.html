@@ -28,7 +28,7 @@
           (click)="setActiveTutorial(tutorial, i)"
         >
           {{ tutorial.title }}
-          {{tutorial.image}}
+          
         </li>
       </ul>
   
@@ -45,6 +45,10 @@
         <div>
           <label><strong>Description:</strong></label>
           {{ currentTutorial.description }}
+        </div>
+        <div>
+          <label><strong>Image:</strong></label>
+          <img src="{{ currentTutorial.image }}" height="50%" width="40%">
         </div>
         <div>
           <label><strong>Status:</strong></label>
